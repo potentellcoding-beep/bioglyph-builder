@@ -1,12 +1,9 @@
-import { Activity, CharmShape, EyebrowShape, FaceShape, ScienceFeeling, Transport } from "./types";
+import { Activity, CharmShape, EyebrowShape, FaceShape, HairTexture, ScienceFeeling, Transport } from "./types";
 
 export const FACE_SHAPES: { value: FaceShape; label: string }[] = [
+  { value: "round", label: "Circle" },
   { value: "oval", label: "Oval" },
-  { value: "round", label: "Round" },
   { value: "square", label: "Square" },
-  { value: "heart", label: "Heart" },
-  { value: "diamond", label: "Diamond" },
-  { value: "rectangle", label: "Rectangle" },
 ];
 
 export const MONTHS = [
@@ -24,15 +21,17 @@ export const MONTHS = [
   "December",
 ];
 
-export const HAIR_COLORS = [
-  { value: "#2b1b12", label: "Black" },
-  { value: "#5c3a21", label: "Brown" },
-  { value: "#a9662d", label: "Auburn" },
-  { value: "#e8c26b", label: "Blonde" },
-  { value: "#e04b4b", label: "Red" },
-  { value: "#8b8b8b", label: "Gray" },
-  { value: "#6b3fa0", label: "Purple" },
-  { value: "#2e7dd1", label: "Blue" },
+export interface HairColorOption {
+  value: string;
+  label: string;
+  texture: HairTexture;
+}
+
+export const HAIR_COLORS: HairColorOption[] = [
+  { value: "#e8c26b", label: "Blonde", texture: "straight" },
+  { value: "#2b1b12", label: "Black", texture: "curl" },
+  { value: "#5c3a21", label: "Brunette", texture: "zigzag" },
+  { value: "#e04b4b", label: "Red", texture: "coil" },
 ];
 
 export const HAIR_LENGTHS = [
@@ -45,9 +44,7 @@ export const EYE_COLORS = [
   { value: "#4a7a3f", label: "Green" },
   { value: "#4a6fa5", label: "Blue" },
   { value: "#5c3a21", label: "Brown" },
-  { value: "#8b8b8b", label: "Gray" },
-  { value: "#3d2b1f", label: "Hazel" },
-  { value: "#1a1a1a", label: "Dark Brown" },
+  { value: "#8a6a3d", label: "Hazel" },
 ];
 
 export interface EyebrowOption {
@@ -88,15 +85,12 @@ export const SCIENCE_FEELINGS: { value: ScienceFeeling; label: string; icon: str
 export const ICE_CREAM_FLAVORS = [
   { value: "vanilla", label: "Vanilla", color: "#f6ecd9" },
   { value: "chocolate", label: "Chocolate", color: "#6b4226" },
-  { value: "strawberry", label: "Strawberry", color: "#f4a3b0" },
-  { value: "mint", label: "Mint Chip", color: "#a3d9b1" },
-  { value: "cookies_cream", label: "Cookies & Cream", color: "#e3e3e3" },
-  { value: "rocky_road", label: "Rocky Road", color: "#7a4b3a" },
+  { value: "other", label: "Other", color: "#f4a3b0" },
 ];
 
 export const CHARM_SHAPE_LABEL: Record<CharmShape, string> = {
   circle: "Circle",
-  rectangle: "Rectangle",
+  rectangle: "Square",
   star: "Star",
 };
 

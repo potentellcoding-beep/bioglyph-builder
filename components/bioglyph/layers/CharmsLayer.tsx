@@ -24,10 +24,10 @@ function Charm({ cx, cy, shape }: { cx: number; cy: number; shape: CharmShape })
     case "rectangle":
       return (
         <rect
-          x={cx - r}
-          y={cy - r * 0.65}
-          width={r * 2}
-          height={r * 1.3}
+          x={cx - r * 0.85}
+          y={cy - r * 0.85}
+          width={r * 1.7}
+          height={r * 1.7}
           fill={CHARM_COLOR}
           stroke={STROKE}
           strokeWidth={2.5}

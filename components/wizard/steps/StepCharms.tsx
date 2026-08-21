@@ -16,10 +16,10 @@ function ShapeIcon({ shape }: { shape: CharmShape }) {
       )}
       {shape === "rectangle" && (
         <rect
-          x={c - r}
-          y={c - r * 0.65}
-          width={r * 2}
-          height={r * 1.3}
+          x={c - r * 0.85}
+          y={c - r * 0.85}
+          width={r * 1.7}
+          height={r * 1.7}
           fill="#f2c14e"
           stroke="#3a2a1c"
           strokeWidth={2}

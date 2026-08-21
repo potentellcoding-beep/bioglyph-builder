@@ -1,12 +1,8 @@
-export type FaceShape =
-  | "oval"
-  | "round"
-  | "square"
-  | "heart"
-  | "diamond"
-  | "rectangle";
+export type FaceShape = "oval" | "round" | "square";
 
 export type HairLength = "short" | "medium" | "long";
+
+export type HairTexture = "straight" | "curl" | "zigzag" | "coil";
 
 export type EyeStyle = "circle" | "oval";
 
