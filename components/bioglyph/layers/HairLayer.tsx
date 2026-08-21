@@ -25,8 +25,10 @@ export default function HairLayer({
   const strandLen = LENGTH_PX[length];
 
   const strands = [];
-  const startDeg = 200;
-  const endDeg = -20;
+  // keep the whole spread in the upper half of the head so no strand ever
+  // starts below the eye line (which read as hair growing from the bottom).
+  const startDeg = 170;
+  const endDeg = 10;
   const n = Math.max(1, strandCount);
 
   for (let i = 0; i < n; i++) {
