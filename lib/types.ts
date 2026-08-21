@@ -6,6 +6,8 @@ export type HairTexture = "straight" | "curl" | "zigzag" | "coil";
 
 export type EyeStyle = "circle" | "oval";
 
+export type EyeGaze = "up" | "down" | "left" | "right";
+
 export type Transport = "bus" | "car" | "bike" | "walk";
 
 export type ScienceFeeling = "love" | "fine" | "scary" | "dislike";

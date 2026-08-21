@@ -1,4 +1,4 @@
-import { Activity, CharmShape, EyebrowShape, FaceShape, HairTexture, ScienceFeeling, Transport } from "./types";
+import { Activity, CharmShape, EyebrowShape, EyeGaze, FaceShape, HairTexture, ScienceFeeling, Transport } from "./types";
 
 export const FACE_SHAPES: { value: FaceShape; label: string }[] = [
   { value: "round", label: "Circle" },
@@ -40,11 +40,17 @@ export const HAIR_LENGTHS = [
   { value: "long", label: "Long" },
 ] as const;
 
-export const EYE_COLORS = [
-  { value: "#4a7a3f", label: "Green" },
-  { value: "#4a6fa5", label: "Blue" },
-  { value: "#5c3a21", label: "Brown" },
-  { value: "#8a6a3d", label: "Hazel" },
+export interface EyeColorOption {
+  value: string;
+  label: string;
+  gaze: EyeGaze;
+}
+
+export const EYE_COLORS: EyeColorOption[] = [
+  { value: "#4a7a3f", label: "Green", gaze: "up" },
+  { value: "#4a6fa5", label: "Blue", gaze: "right" },
+  { value: "#5c3a21", label: "Brown", gaze: "down" },
+  { value: "#8a6a3d", label: "Hazel", gaze: "left" },
 ];
 
 export interface EyebrowOption {

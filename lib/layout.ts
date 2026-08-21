@@ -37,4 +37,7 @@ export const EAR_Y = FACE_CY - 6;
 export const LEFT_EAR_X = FACE_LEFT_X - 6;
 export const RIGHT_EAR_X = FACE_RIGHT_X + 6;
 
-export const CHARM_ROW_Y = FACE_BOTTOM_Y + 34;
+export const NECK_Y = FACE_BOTTOM_Y + 6;
+export const NECK_COLLAR_DX = 40;
+export const CHAIN_DIP_START = 26;
+export const CHAIN_DIP_STEP = 20;
