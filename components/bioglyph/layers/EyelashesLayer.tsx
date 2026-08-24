@@ -3,9 +3,15 @@ import { EYE_Y, LEFT_EYE_X, RIGHT_EYE_X } from "@/lib/layout";
 function lashesForEye(cx: number, cy: number, count: number, flip: boolean) {
   const lashes = [];
   const s = flip ? -1 : 1;
+  // fan out further as more lashes are added so they stay evenly spaced
+  // instead of crowding together at a fixed arc width.
+  const centerDeg = -25;
+  const angleStep = 14;
+  const span = Math.min(120, (count - 1) * angleStep);
+  const startDeg = centerDeg - span / 2;
   for (let i = 0; i < count; i++) {
     const t = count === 1 ? 0.5 : i / (count - 1);
-    const angleDeg = -70 + t * 90; // fan across the top-outer edge of the eye
+    const angleDeg = startDeg + t * span;
     const rad = (angleDeg * Math.PI) / 180;
     const baseX = cx + s * 16 * Math.cos(rad);
     const baseY = cy - 18 - 4 * Math.sin(rad);
