@@ -1,4 +1,4 @@
-import os, math
+import os, math, argparse
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # (Z, symbol, name, standard atomic weight, category)
@@ -24,13 +24,32 @@ assert len(E)==48
 COL = {"h":"#e9eaec","alkali":"#f0857a","noble":"#6cc96a","halogen":"#a86ad6",
        "nonmetal":"#f5a83e","transition":"#5aaee6","post":"#b4bcc4"}
 
+# Metal / nonmetal / metalloid colours, matching the Element Detective game's key.
+TYPE_COL = {"metal":"#9cc4f0","nonmetal":"#f2d27e","metalloid":"#c9b0f2"}
+METALLOIDS = {"B","Si","Ge","As"}
+NONMETALS = {"H","He","C","N","O","F","Ne","P","S","Cl","Ar","Se","Br","Kr","I"}
+def element_type(sym):
+    return "metalloid" if sym in METALLOIDS else "nonmetal" if sym in NONMETALS else "metal"
+
+ap = argparse.ArgumentParser(description="Generate the element tiles.")
+ap.add_argument("--scheme", choices=["family","type"], default="family",
+                help="colour by element family (default) or by metal/nonmetal/metalloid")
+ap.add_argument("--out", default=os.path.dirname(os.path.abspath(__file__)),
+                help="output folder (default: this script's folder)")
+ap.add_argument("--us", action="store_true", help="use US spelling (Aluminum)")
+args = ap.parse_args()
+if args.us: E = [e[:2]+("Aluminum" if e[2]=="Aluminium" else e[2],)+e[3:] for e in E]
+if args.scheme == "type":
+    COL = TYPE_COL; E = [e[:4]+(element_type(e[1]),) for e in E]
+
 def hx(c): return tuple(int(c[i:i+2],16) for i in (1,3,5))
 def mix(a,b,t): return tuple(round(a[i]+(b[i]-a[i])*t) for i in range(3))
 
 FB="/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
 FR="/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 S=4; W=400; P=W*S
-os.makedirs("tiles/png",exist_ok=True); os.makedirs("tiles/svg",exist_ok=True)
+OUT=args.out
+os.makedirs(f"{OUT}/png",exist_ok=True); os.makedirs(f"{OUT}/svg",exist_ok=True)
 
 def fit(text, path, size, maxw):
     f=ImageFont.truetype(path,size)
@@ -81,10 +100,10 @@ def svg(z,sym,name,mass,cat):
 tiles=[]
 for e in E:
     fn=f"{e[0]:03d}-{e[1]}"
-    t=png(*e); t.save(f"tiles/png/{fn}.png"); tiles.append(t)
-    open(f"tiles/svg/{fn}.svg","w").write(svg(*e))
+    t=png(*e); t.save(f"{OUT}/png/{fn}.png"); tiles.append(t)
+    open(f"{OUT}/svg/{fn}.svg","w").write(svg(*e))
 # contact sheet 8x6
 cs=Image.new("RGB",(8*200+40,6*200+40),(240,241,243))
 for i,t in enumerate(tiles):
     cs.paste(t.resize((200,200),Image.LANCZOS),(20+(i%8)*200,20+(i//8)*200),t.resize((200,200),Image.LANCZOS))
-cs.save("tiles/all-48-preview.png")
+cs.save(f"{OUT}/all-48-preview.png")
