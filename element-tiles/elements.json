@@ -1,0 +1,438 @@
+{
+  "baseUrl": "https://raw.githubusercontent.com/potentellcoding-beep/bioglyph-builder/main/element-tiles/",
+  "tileSize": 400,
+  "elements": [
+    {
+      "number": 1,
+      "symbol": "H",
+      "name": "Hydrogen",
+      "mass": 1,
+      "category": "h",
+      "png": "png/001-H.png",
+      "svg": "svg/001-H.svg"
+    },
+    {
+      "number": 2,
+      "symbol": "He",
+      "name": "Helium",
+      "mass": 4,
+      "category": "noble",
+      "png": "png/002-He.png",
+      "svg": "svg/002-He.svg"
+    },
+    {
+      "number": 3,
+      "symbol": "Li",
+      "name": "Lithium",
+      "mass": 7,
+      "category": "alkali",
+      "png": "png/003-Li.png",
+      "svg": "svg/003-Li.svg"
+    },
+    {
+      "number": 4,
+      "symbol": "Be",
+      "name": "Beryllium",
+      "mass": 9,
+      "category": "alkali",
+      "png": "png/004-Be.png",
+      "svg": "svg/004-Be.svg"
+    },
+    {
+      "number": 5,
+      "symbol": "B",
+      "name": "Boron",
+      "mass": 11,
+      "category": "nonmetal",
+      "png": "png/005-B.png",
+      "svg": "svg/005-B.svg"
+    },
+    {
+      "number": 6,
+      "symbol": "C",
+      "name": "Carbon",
+      "mass": 12,
+      "category": "nonmetal",
+      "png": "png/006-C.png",
+      "svg": "svg/006-C.svg"
+    },
+    {
+      "number": 7,
+      "symbol": "N",
+      "name": "Nitrogen",
+      "mass": 14,
+      "category": "nonmetal",
+      "png": "png/007-N.png",
+      "svg": "svg/007-N.svg"
+    },
+    {
+      "number": 8,
+      "symbol": "O",
+      "name": "Oxygen",
+      "mass": 16,
+      "category": "nonmetal",
+      "png": "png/008-O.png",
+      "svg": "svg/008-O.svg"
+    },
+    {
+      "number": 9,
+      "symbol": "F",
+      "name": "Fluorine",
+      "mass": 19,
+      "category": "halogen",
+      "png": "png/009-F.png",
+      "svg": "svg/009-F.svg"
+    },
+    {
+      "number": 10,
+      "symbol": "Ne",
+      "name": "Neon",
+      "mass": 20,
+      "category": "noble",
+      "png": "png/010-Ne.png",
+      "svg": "svg/010-Ne.svg"
+    },
+    {
+      "number": 11,
+      "symbol": "Na",
+      "name": "Sodium",
+      "mass": 23,
+      "category": "alkali",
+      "png": "png/011-Na.png",
+      "svg": "svg/011-Na.svg"
+    },
+    {
+      "number": 12,
+      "symbol": "Mg",
+      "name": "Magnesium",
+      "mass": 24,
+      "category": "alkali",
+      "png": "png/012-Mg.png",
+      "svg": "svg/012-Mg.svg"
+    },
+    {
+      "number": 13,
+      "symbol": "Al",
+      "name": "Aluminium",
+      "mass": 27,
+      "category": "post",
+      "png": "png/013-Al.png",
+      "svg": "svg/013-Al.svg"
+    },
+    {
+      "number": 14,
+      "symbol": "Si",
+      "name": "Silicon",
+      "mass": 28,
+      "category": "nonmetal",
+      "png": "png/014-Si.png",
+      "svg": "svg/014-Si.svg"
+    },
+    {
+      "number": 15,
+      "symbol": "P",
+      "name": "Phosphorus",
+      "mass": 31,
+      "category": "nonmetal",
+      "png": "png/015-P.png",
+      "svg": "svg/015-P.svg"
+    },
+    {
+      "number": 16,
+      "symbol": "S",
+      "name": "Sulfur",
+      "mass": 32,
+      "category": "nonmetal",
+      "png": "png/016-S.png",
+      "svg": "svg/016-S.svg"
+    },
+    {
+      "number": 17,
+      "symbol": "Cl",
+      "name": "Chlorine",
+      "mass": 35,
+      "category": "halogen",
+      "png": "png/017-Cl.png",
+      "svg": "svg/017-Cl.svg"
+    },
+    {
+      "number": 18,
+      "symbol": "Ar",
+      "name": "Argon",
+      "mass": 40,
+      "category": "noble",
+      "png": "png/018-Ar.png",
+      "svg": "svg/018-Ar.svg"
+    },
+    {
+      "number": 19,
+      "symbol": "K",
+      "name": "Potassium",
+      "mass": 39,
+      "category": "alkali",
+      "png": "png/019-K.png",
+      "svg": "svg/019-K.svg"
+    },
+    {
+      "number": 20,
+      "symbol": "Ca",
+      "name": "Calcium",
+      "mass": 40,
+      "category": "alkali",
+      "png": "png/020-Ca.png",
+      "svg": "svg/020-Ca.svg"
+    },
+    {
+      "number": 21,
+      "symbol": "Sc",
+      "name": "Scandium",
+      "mass": 45,
+      "category": "transition",
+      "png": "png/021-Sc.png",
+      "svg": "svg/021-Sc.svg"
+    },
+    {
+      "number": 22,
+      "symbol": "Ti",
+      "name": "Titanium",
+      "mass": 48,
+      "category": "transition",
+      "png": "png/022-Ti.png",
+      "svg": "svg/022-Ti.svg"
+    },
+    {
+      "number": 23,
+      "symbol": "V",
+      "name": "Vanadium",
+      "mass": 51,
+      "category": "transition",
+      "png": "png/023-V.png",
+      "svg": "svg/023-V.svg"
+    },
+    {
+      "number": 24,
+      "symbol": "Cr",
+      "name": "Chromium",
+      "mass": 52,
+      "category": "transition",
+      "png": "png/024-Cr.png",
+      "svg": "svg/024-Cr.svg"
+    },
+    {
+      "number": 25,
+      "symbol": "Mn",
+      "name": "Manganese",
+      "mass": 55,
+      "category": "transition",
+      "png": "png/025-Mn.png",
+      "svg": "svg/025-Mn.svg"
+    },
+    {
+      "number": 26,
+      "symbol": "Fe",
+      "name": "Iron",
+      "mass": 56,
+      "category": "transition",
+      "png": "png/026-Fe.png",
+      "svg": "svg/026-Fe.svg"
+    },
+    {
+      "number": 27,
+      "symbol": "Co",
+      "name": "Cobalt",
+      "mass": 59,
+      "category": "transition",
+      "png": "png/027-Co.png",
+      "svg": "svg/027-Co.svg"
+    },
+    {
+      "number": 28,
+      "symbol": "Ni",
+      "name": "Nickel",
+      "mass": 59,
+      "category": "transition",
+      "png": "png/028-Ni.png",
+      "svg": "svg/028-Ni.svg"
+    },
+    {
+      "number": 29,
+      "symbol": "Cu",
+      "name": "Copper",
+      "mass": 64,
+      "category": "transition",
+      "png": "png/029-Cu.png",
+      "svg": "svg/029-Cu.svg"
+    },
+    {
+      "number": 30,
+      "symbol": "Zn",
+      "name": "Zinc",
+      "mass": 65,
+      "category": "transition",
+      "png": "png/030-Zn.png",
+      "svg": "svg/030-Zn.svg"
+    },
+    {
+      "number": 31,
+      "symbol": "Ga",
+      "name": "Gallium",
+      "mass": 70,
+      "category": "post",
+      "png": "png/031-Ga.png",
+      "svg": "svg/031-Ga.svg"
+    },
+    {
+      "number": 32,
+      "symbol": "Ge",
+      "name": "Germanium",
+      "mass": 73,
+      "category": "nonmetal",
+      "png": "png/032-Ge.png",
+      "svg": "svg/032-Ge.svg"
+    },
+    {
+      "number": 33,
+      "symbol": "As",
+      "name": "Arsenic",
+      "mass": 75,
+      "category": "nonmetal",
+      "png": "png/033-As.png",
+      "svg": "svg/033-As.svg"
+    },
+    {
+      "number": 34,
+      "symbol": "Se",
+      "name": "Selenium",
+      "mass": 79,
+      "category": "nonmetal",
+      "png": "png/034-Se.png",
+      "svg": "svg/034-Se.svg"
+    },
+    {
+      "number": 35,
+      "symbol": "Br",
+      "name": "Bromine",
+      "mass": 80,
+      "category": "halogen",
+      "png": "png/035-Br.png",
+      "svg": "svg/035-Br.svg"
+    },
+    {
+      "number": 36,
+      "symbol": "Kr",
+      "name": "Krypton",
+      "mass": 84,
+      "category": "noble",
+      "png": "png/036-Kr.png",
+      "svg": "svg/036-Kr.svg"
+    },
+    {
+      "number": 37,
+      "symbol": "Rb",
+      "name": "Rubidium",
+      "mass": 85,
+      "category": "alkali",
+      "png": "png/037-Rb.png",
+      "svg": "svg/037-Rb.svg"
+    },
+    {
+      "number": 38,
+      "symbol": "Sr",
+      "name": "Strontium",
+      "mass": 88,
+      "category": "alkali",
+      "png": "png/038-Sr.png",
+      "svg": "svg/038-Sr.svg"
+    },
+    {
+      "number": 40,
+      "symbol": "Zr",
+      "name": "Zirconium",
+      "mass": 91,
+      "category": "transition",
+      "png": "png/040-Zr.png",
+      "svg": "svg/040-Zr.svg"
+    },
+    {
+      "number": 42,
+      "symbol": "Mo",
+      "name": "Molybdenum",
+      "mass": 96,
+      "category": "transition",
+      "png": "png/042-Mo.png",
+      "svg": "svg/042-Mo.svg"
+    },
+    {
+      "number": 47,
+      "symbol": "Ag",
+      "name": "Silver",
+      "mass": 108,
+      "category": "transition",
+      "png": "png/047-Ag.png",
+      "svg": "svg/047-Ag.svg"
+    },
+    {
+      "number": 48,
+      "symbol": "Cd",
+      "name": "Cadmium",
+      "mass": 112,
+      "category": "transition",
+      "png": "png/048-Cd.png",
+      "svg": "svg/048-Cd.svg"
+    },
+    {
+      "number": 50,
+      "symbol": "Sn",
+      "name": "Tin",
+      "mass": 119,
+      "category": "post",
+      "png": "png/050-Sn.png",
+      "svg": "svg/050-Sn.svg"
+    },
+    {
+      "number": 53,
+      "symbol": "I",
+      "name": "Iodine",
+      "mass": 127,
+      "category": "halogen",
+      "png": "png/053-I.png",
+      "svg": "svg/053-I.svg"
+    },
+    {
+      "number": 56,
+      "symbol": "Ba",
+      "name": "Barium",
+      "mass": 137,
+      "category": "alkali",
+      "png": "png/056-Ba.png",
+      "svg": "svg/056-Ba.svg"
+    },
+    {
+      "number": 78,
+      "symbol": "Pt",
+      "name": "Platinum",
+      "mass": 195,
+      "category": "transition",
+      "png": "png/078-Pt.png",
+      "svg": "svg/078-Pt.svg"
+    },
+    {
+      "number": 79,
+      "symbol": "Au",
+      "name": "Gold",
+      "mass": 197,
+      "category": "transition",
+      "png": "png/079-Au.png",
+      "svg": "svg/079-Au.svg"
+    },
+    {
+      "number": 80,
+      "symbol": "Hg",
+      "name": "Mercury",
+      "mass": 201,
+      "category": "transition",
+      "png": "png/080-Hg.png",
+      "svg": "svg/080-Hg.svg"
+    }
+  ]
+}
