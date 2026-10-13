@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // The Element Detective game is a static page in public/element-detective/.
+  // Send the folder URL to its index.html so the page's relative tile paths resolve.
+  redirects() {
+    return [
+      {
+        source: "/element-detective",
+        destination: "/element-detective/index.html",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
