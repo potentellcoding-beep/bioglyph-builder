@@ -10,6 +10,13 @@ const nextConfig: NextConfig = {
         destination: "/element-detective/index.html",
         permanent: false,
       },
+      {
+        // games.potentell.com has one game so far; send its homepage there.
+        source: "/",
+        has: [{ type: "host", value: "games.potentell.com" }],
+        destination: "/element-detective/index.html",
+        permanent: false,
+      },
     ];
   },
 };
